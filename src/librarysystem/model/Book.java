@@ -76,10 +76,16 @@ public class Book {
         this.borrowerPhoneNumber = borrowerPhoneNumber;
     }
 
-    public void getBorrowBook(String studentName, String studentPhoneNumber) {
+    public void borrowBook(String studentName, String studentPhoneNumber) {
         this.borrowed = true;
         this.borrowedBy = studentName;
         this.borrowerPhoneNumber = studentPhoneNumber;
+    }
+
+    public void returnBook() {
+        this.borrowed = false;
+        this.borrowedBy = "";
+        this.borrowerPhoneNumber = "";
     }
 
     @Override
