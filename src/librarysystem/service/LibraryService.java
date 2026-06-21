@@ -43,7 +43,7 @@ public class LibraryService {
         if (!book.isBorrowed()) {
             throw new BookNotFoundException("Book is not currently borrowed: " + bookId);
         }
-        book.returnBook();
+        book.returnBook(bookId);
     }
 
     public List<Book> listAllBooks() throws EmptyException {

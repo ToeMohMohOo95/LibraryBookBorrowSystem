@@ -82,7 +82,7 @@ public class Book {
         this.borrowerPhoneNumber = studentPhoneNumber;
     }
 
-    public void returnBook() {
+    public void returnBook(String bookId) {
         this.borrowed = false;
         this.borrowedBy = "";
         this.borrowerPhoneNumber = "";
